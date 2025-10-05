@@ -7,7 +7,7 @@
     <title>biyousi</title>
     <style>
         body {
-            margin: 0;
+
             padding: 0;
             background-color: #f0f0f0;
             font-family: sans-serif;
@@ -63,6 +63,7 @@
         img {
             max-width: 100%;
             height: auto;
+            display: block;
         }
 
         .staff-section {
@@ -80,15 +81,19 @@
         }
 
         @media(max-width:768px) {
-            img {
-                width: 700px;
+            .container {
+                width: 100%;
+                padding: 0 10px;
             }
 
-            @media (max-width: 768px) {
-                img {
-                    width: 100%;
-                    /* スマホでは画面幅に合わせる */
-                }
+            img {
+                width: 100%;
+            }
+
+            .f {
+                position: static;
+                display: block;
+                margin: 10px auto;
             }
         }
     </style>
