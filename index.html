@@ -2,184 +2,196 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>biyousi</title>
     <style>
         body {
-            font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-
-        header {
-            background: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
         }
 
         .container {
-            display: block;
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-
-            margin: 0;
-            padding: 0;
-            padding: 1rem;
+            width: 90%;
+            margin: 0 auto;
+            align-items: center;
         }
 
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        .d,
+        .f {
+            border-radius: 5px;
+            padding: 5px 10px;
+            transition: all 0.4s ease;
+            cursor: pointer;
         }
 
-        h2 {
-            border-left: 6px solid #4CAF50;
-            padding-left: 10px;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
+        .d:hover,
+        .f:hover {
+            color: #333;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            transform: scale(1.05) rotateX(5deg);
         }
 
-        p {
-            line-height: 1.8;
-            margin: 0.5rem 0;
+        .f:hover {
+            transform: scale(2) rotateX(5deg);
         }
 
-        .skills span {
+        .senn {
             display: inline-block;
-            margin: 5px;
-            padding: 6px 12px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            color: white;
+            width: 1px;
+            height: 25px;
+            background-color: black;
+            margin: 0 10px;
+            vertical-align: middle;
         }
 
-        .skills .html {
-            background: #2196F3;
+        .bo {
+            text-align: center;
+            border: none;
+            border-top: 2px solid #797575a9;
+            width: 700px;
+            max-width: 100%;
+            margin: 20px auto;
         }
 
-        .skills .css {
-            background: #E91E63;
+        .center-img {
+            text-align: center;
         }
 
-        .skills .js {
-            background: #FF9800;
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .skills .wp {
-            background: #4CAF50;
+        .staff-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
         }
 
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+        .staff-section p {
+            writing-mode: vertical-rl;
+            margin: 10px;
+            font-size: small;
+            letter-spacing: -1px;
+            transform: rotate(360deg);
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .sns img {
-            width: 40px;
-            margin-right: 10px;
-        }
-
-        /* スマホ対応 */
-        @media (max-width: 100%) {
-            body {
-                font-size: 15px;
+        @media(max-width:768px) {
+            img {
+                width: 700px;
             }
 
-            .card {
-                padding: 1rem;
-            }
-
-            h2 {
-                font-size: 1rem;
+            @media (max-width: 768px) {
+                img {
+                    width: 100%;
+                    /* スマホでは画面幅に合わせる */
+                }
             }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>自己紹介</h1>
-    </header>
-
     <div class="container">
-        <div class="card">
-            <ul>
-                <li><a href="#10">1. プロフィール</a></li>
-                <li><a href="#1">2. スキル</a></li>
-                <li><a href="#2">3. 稼働時間</a></li>
-                <li><a href="#3">4. 実績</a></li>
-                <li><a href="#4">5. 自己PR</a></li>
-                <li><a href="#5">6. 目標</a></li>
-                <li><a href="#6">7. 連絡先</a></li>
-
-
-            </ul>
-        </div>
-
-        <div class="card" 　>
-            <h2 id="10">プロフィール</h2>
-            <p><strong>名前：</strong> 河野 翔也</p>
-            <p><strong>生年月日：</strong> 2006年11月29日（19歳）</p>
-        </div>
-
-        <div class="card" id="1">
-            <h2>スキル</h2>
-            <div class="skills">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-                <span class="wp">WordPress</span>
+        <!-- ヘッダー -->
+        <div style="position: sticky">
+            <img src="img/s＆ｗ.png" style=" max-width: 900px; height: auto;">
+            <div class="f" style="position: absolute; top: 0px; left: 800px;">
+                <img src="img/f81e2b41-8938-477d-94be-49c1ec9b28a9.png" width="50" alt="アイコン">
             </div>
         </div>
 
-        <div class="card" id="2">
-            <h2>稼働時間</h2>
-            <p>平日：17時～24時</p>
-            <p>休日：9時～24時</p>
+        <!-- BLOG セクション -->
+        <h3>01<span class="senn"></span>BLOG</h3>
+
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+            <img src="img/biyou.jpg" style="width: 200px;">
+            <p
+                style="writing-mode: vertical-rl;margin: 10px; font-size: small; letter-spacing: -1px; transform: rotate(360deg);">
+                2025.08.02</p>
         </div>
 
-        <div class="card" id="3">
-            <h2>実績</h2>
-            <a href=""></a>
-            <p>サイト制作中</p>
-            <a href=" https://kawano9211-collab.github.io/kawanohf/">サイト</a>
+        <br><br><br>
+        <h3>02 <span class="senn"></span>ABOUT</h3>
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+            <img src="img/biyou.jpg" style="width: 400px; height: auto;">
+            <p style="writing-mode: vertical-rl;margin: 10px; font-size: small; letter-spacing: -1px; transform:">
+                おしゃれな店内で<br>快適にお過ごしください！！</p>
+        </div><br><br><br>
+        <!-- 画像セクション -->
+        <div class="center-img">
+            <img src="img/gaikann.jpg" style="width: 700px;">
         </div>
 
-        <div class="card" id="4">
-            <h2>自己PR</h2>
-            <p>独学でWeb制作を半年ほど勉強しています。<br>
-                納期を守ることを最優先に作業します。</p>
+        <!-- 住所・電話・営業時間 -->
+        <p>　　　　　住所　　　　　〒848-4535<br>　　　　　　　　　　　　京都府京都市1F</p>
+        <hr class="bo">
+        <p>　　　　　TEL　　　　　090-7547-5554</p>
+        <hr class="bo">
+        <p>　　　　　営業時間　　　9:00～19:00</p>
+        <hr class="bo">
+        <p>　　　　　定休日　　　　火曜日</p>
+
+        <!-- Google Map -->
+        <div style="text-align: center; margin-top: 20px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d98297.39557069725!2d136.25333844009566!3d35.34443936673647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1759578254710!5m2!1sja!2sjp"
+                width="100%" height="450" style="border:0; max-width: 700px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
 
-        <div class="card" id="5">
-            <h2>目標</h2>
-            <p>4月からプログラミングの専門学校に通う予定です。<br>
-                実績を積みながらAI開発を学んでいきたいです。</p>
+        <!-- ADDRESS -->
+        <h3>03 <span class="senn"></span>MENU</h3>
+        <div style="text-align: center;">
+            <img src="img/名称未設定のデザイン.png" style="width: 900px; height: 300px;">
+        </div>
+        <p>　　　　　　　カット　　　　　　　¥4.100～　　　　　　　カラー　　　　　　¥5.100～</p>
+        <hr class="bo">
+
+        <p>　　　　　　　デザインカラー　　　¥10.100～　　　　　　 パーマ　　　　　　¥6.100～</p>
+        <hr class="bo">
+
+        <p>　　　　　　　トリートメント　　　¥3.10～</p>
+        <hr class="bo">
+
+        <!-- STAFF -->
+        <h3>04 <span class="senn"></span>STAFF</h3>
+
+
+        <div class="staff-section">
+            <img src="https://1.bp.blogspot.com/-q3wHeD3V-Vs/VGLMcL-qStI/AAAAAAAApAs/Fql70guQhE0/s800/job_biyoushi.png"
+                style="width: 250px;">
+            <p>stylist</p>
         </div>
 
-        <div class="card" id="6">
-            <h2>連絡先</h2>
-            <p>📧 <a href="mailto:kawano9511@gmail.com?subject=お問い合わせ&body=案件依頼">kawano9511@gmail.com</a></p>
-            <div class="sns">
-                <a href="https://www.instagram.com/kawano11293?igsh=MXgzbjByY2U3Zmk5dA%3D%3D&utm_source=qr">
-                    <img src="https://about.fb.com/ja/wp-content/uploads/sites/15/2019/10/new-ig-icon-1.png"
-                        alt="Instagram">
-                </a>
-            </div>
-        </div>
+        <p>
+            <span
+                style="font-family: Cambria, Georgia, 'Times New Roman', serif; color: #5f585885; font-size: x-large;">
+                kawano
+            </span>
+            　　　河野　翔也<br>
+            <span
+                style="font-family: Cambria, Georgia, 'Times New Roman', serif; color: #5f585885; font-size: x-large;">
+                shoya
+            </span>
+        </p>
+        <h3>06 <span class="senn"></span>RECRUIT</h3>
 
+        <img src="img/i.png" style="width: 400px; height: 300px;">
+        <p><br>一緒に働ける方、募集中です!!
+            <br>Tel.　　090-7547-5554<br>mail.　<a href="">jgijijg@gmail.com</a>
+
+
+        </p>
+
+
+
+
+    </div>
     </div>
 </body>
 
